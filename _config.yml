@@ -13,3 +13,4 @@ markdown: kramdown
 
 exclude:
   - README.md
+  - about.md
