@@ -8,6 +8,7 @@ publications:
     year: 2025
     pages: "460-480"
     doi: "https://doi.org/10.1007/978-3-031-94575-5_25"
+    first_author: true
 
   - title: "ShortPathQA: A Dataset for Controllable Fusion of Large Language Models with Knowledge Graphs"
     authors: "Mikhail Salnikov, Andrey Sakhovskiy, Irina Nikishina, Aida Usmanova, Angelie Kraft, Cedric Möller, Debayan Banerjee, Junbo Huang, Longquan Jiang, Rana Abdullah, Xi Yan, Elena Tutubalina, Ricardo Usbeck, Alexander Panchenko"
@@ -36,6 +37,7 @@ publications:
     year: 2024
     pages: "23-40"
     doi: "https://doi.org/10.1007/978-3-031-77850-6_2"
+    first_author: true
 
   - title: "Entity Linking with Out-of-Knowledge-Graph Entity Detection and Clustering Using Only Knowledge Graphs"
     authors: "Cedric Möller, Ricardo Usbeck"
@@ -43,6 +45,7 @@ publications:
     year: 2024
     pages: "88-105"
     doi: "https://doi.org/10.3233/SSW240009"
+    first_author: true
 
   - title: "Incorporating Type Information into Zero-Shot Relation Extraction"
     authors: "Ricardo Usbeck, Cedric Möller"
@@ -69,6 +72,7 @@ publications:
     year: 2022
     pages: "925-966"
     doi: "https://doi.org/10.3233/SW-212865"
+    first_author: true
 
   - title: "Knowledge Graph Population with Out-of-KG Entities"
     authors: "Cedric Möller"
@@ -76,3 +80,4 @@ publications:
     year: 2022
     pages: "199-214"
     doi: "https://doi.org/10.1007/978-3-031-11609-4_35"
+    first_author: true

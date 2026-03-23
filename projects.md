@@ -13,6 +13,10 @@ AI tools to support emergency response operations, developed as part of a multi-
 - Automatic speech recognition pipelines to transcribe and structure emergency radio communication
 - NLP components evaluated in operational training environments for emergency services
 
+[**Open RESCUE-MATE Crisis Map**](https://map.skynet.coypu.org)
+
+> **Note:** This demo is not always running and may be temporarily unavailable.
+
 ---
 
 ## Data Extraction for Clinical Research
@@ -35,11 +39,10 @@ A graph-based dialogue system for task-oriented human–machine interaction.
 
 ---
 
-## CoyPu Crisis Map
-*University of Hamburg*
+## RESCUE-MATE Crisis Map
 
-An interactive map visualisation showing crisis-related event data enriched with knowledge graph information, developed as part of the [CoyPu project](https://coypu.org).
+An interactive map visualisation showing crisis-related event data, developed as part of the RESCUE MATE project.
 
-[**Open Crisis Map**](https://map.skynet.coypu.org)
+[**Open RESCUE-MATE Crisis Map**](https://map.skynet.coypu.org)
 
 > **Note:** This demo is not always running and may be temporarily unavailable.

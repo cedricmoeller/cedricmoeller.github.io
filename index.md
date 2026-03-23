@@ -48,7 +48,7 @@ German (native) · English (fluent) · Japanese (basic)
 
 See the full [publications list](/publications/).
 
-{% assign sorted_pubs = site.data.publications.publications | sort: "year" | reverse %}
+{% assign sorted_pubs = site.data.publications.publications | where: "first_author", true | sort: "year" | reverse %}
 {% for pub in sorted_pubs limit:5 %}
 - {% if pub.doi %}[{{ pub.title }}]({{ pub.doi }}){% elsif pub.url %}[{{ pub.title }}]({{ pub.url }}){% else %}{{ pub.title }}{% endif %} — *{{ pub.venue }}*, {{ pub.year }}
 {% endfor %}
