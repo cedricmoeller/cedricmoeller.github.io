@@ -1,0 +1,328 @@
+---
+---
+
+/* ─────────────────────────────────────────────────────────
+   Cedric Möller — personal site styles
+   Fonts: Playfair Display (headings) + Figtree (body)
+   Loaded via _includes/custom-head.html
+───────────────────────────────────────────────────────── */
+
+:root {
+  --serif:   'Playfair Display', Georgia, 'Times New Roman', serif;
+  --sans:    'Figtree', -apple-system, system-ui, sans-serif;
+
+  --navy:        #0d1f3c;
+  --navy-mid:    #1e3a5f;
+  --blue:        #1a56db;
+  --rust:        #c85a28;
+  --text:        #374151;
+  --muted:       #6b7280;
+  --bg:          #ffffff;
+  --bg-subtle:   #f7f9fc;
+  --border:      #dde2ea;
+  --border-light:#edf0f5;
+
+  --max-w: 780px;
+  --pad:   0 2rem;
+}
+
+/* ─── Reset ─── */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  font-size: 16.5px;
+  line-height: 1.78;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Headings ─── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif);
+  color: var(--navy);
+  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h1 { font-size: 2.6rem;  letter-spacing: -0.025em; margin-bottom: 0.5em; }
+h2 {
+  font-size: 1.3rem;
+  letter-spacing: -0.005em;
+  margin: 2.6em 0 0.75em;
+  padding-bottom: 0.45em;
+  border-bottom: 1.5px solid var(--border);
+}
+h3 { font-size: 1.05rem; margin: 1.6em 0 0.4em; }
+
+/* ─── Body text ─── */
+p { margin: 0 0 1.1em; }
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+a:hover { color: var(--rust); }
+a:visited { color: var(--blue); }
+
+strong { font-weight: 600; color: var(--navy); }
+em     { font-style: italic; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5em 0;
+}
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.75em 1.25em;
+  border-left: 3px solid var(--blue);
+  background: var(--bg-subtle);
+  border-radius: 0 4px 4px 0;
+  color: var(--muted);
+  font-size: 0.94em;
+  font-style: italic;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* ─── Lists ─── */
+ul, ol {
+  padding-left: 1.4em;
+  margin: 0 0 1em;
+}
+li {
+  margin-bottom: 0.3em;
+  line-height: 1.65;
+}
+/* tighten bullets that follow a paragraph (CV/experience style) */
+p + ul { margin-top: -0.3em; }
+
+/* ─── Navigation ─── */
+.site-header {
+  background: var(--bg);
+  border-top: 3px solid var(--navy);
+  border-bottom: 1px solid var(--border);
+  min-height: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 6px rgba(13,31,60,.05);
+}
+
+/* override minima's floated layout inside header */
+.site-header > .wrapper {
+  max-width: var(--max-w);
+  padding: 13px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title,
+.site-title:visited {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy) !important;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  float: none;
+  transition: color 0.15s ease;
+}
+.site-title:hover { color: var(--blue) !important; }
+
+.site-nav {
+  float: none;
+  line-height: 1;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+/* hide minima's checkbox/label hamburger (we keep it for mobile) */
+.site-nav label[for="nav-trigger"] { display: none; }
+.site-nav input.nav-trigger          { display: none; }
+
+.site-nav .trigger {
+  display: flex;
+  gap: 0;
+}
+.site-nav .page-link {
+  font-family: var(--sans);
+  font-size: 0.775rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 6px 11px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 0;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.site-nav .page-link:hover {
+  color: var(--navy);
+  background: var(--bg-subtle);
+}
+
+/* ─── Mobile nav ─── */
+@media (max-width: 600px) {
+  .site-header > .wrapper {
+    padding: 11px 1.25rem;
+    position: relative;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 8px;
+    right: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    text-align: right;
+  }
+
+  .site-nav label[for="nav-trigger"] {
+    display: block;
+    cursor: pointer;
+    padding: 7px 12px;
+    color: var(--muted);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    user-select: none;
+  }
+
+  .site-nav .nav-trigger:checked ~ .trigger {
+    display: block;
+    padding: 4px 0 8px;
+    border-top: 1px solid var(--border-light);
+  }
+  .site-nav .trigger {
+    display: none;
+    flex-direction: column;
+  }
+
+  .site-nav .page-link {
+    display: block;
+    text-align: left;
+    padding: 6px 14px;
+    border-radius: 0;
+  }
+
+  /* show the SVG menu icon minima provides */
+  .site-nav .menu-icon { display: inline-block; }
+}
+
+/* ─── Page content wrapper ─── */
+.page-content {
+  padding: 3.5rem 0 5.5rem;
+}
+.page-content > .wrapper,
+.post-content > .wrapper {
+  max-width: var(--max-w);
+  padding: var(--pad);
+}
+.wrapper {
+  max-width: var(--max-w);
+  padding: var(--pad);
+  margin: 0 auto;
+}
+
+/* ─── Home page ─── */
+.home-content > h1:first-child {
+  font-size: 3rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.1em;
+  color: var(--navy);
+}
+
+/* accent rule under name */
+.home-content > h1:first-child::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--blue);
+  border-radius: 2px;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+/* lead paragraph immediately following name */
+.home-content > h1:first-child + p {
+  font-size: 1.035rem;
+  line-height: 1.82;
+  color: var(--text);
+  margin-top: 1.25em;
+}
+
+/* ─── Inner pages (Publications, Projects, About) ─── */
+.page-heading {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  margin-bottom: 0.25em;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* small italic note under page heading */
+.page-heading + p > em:only-child {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ─── Footer ─── */
+.site-footer {
+  background: var(--bg-subtle);
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.site-footer .wrapper { max-width: var(--max-w); }
+.site-footer a,
+.site-footer a:visited {
+  color: var(--muted);
+  transition: color 0.15s ease;
+}
+.site-footer a:hover { color: var(--blue); }
+.footer-col-wrapper   { color: var(--muted); }
+.footer-heading {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 0.5em;
+}
+.contact-list,
+.social-media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 800px) {
+  .page-content { padding: 2.5rem 0 4rem; }
+}
+@media (max-width: 600px) {
+  :root { --pad: 0 1.25rem; }
+  h1,
+  .home-content > h1:first-child { font-size: 2.1rem; }
+  h2   { font-size: 1.2rem; }
+  body { font-size: 16px; }
+}

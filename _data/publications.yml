@@ -1,0 +1,78 @@
+# Cached from https://dblp.org/pid/308/1672.html
+# Last updated: 2026-03-23
+
+publications:
+  - title: "Analyzing the Influence of Knowledge Graph Information on Relation Extraction"
+    authors: "Cedric Möller, Ricardo Usbeck"
+    venue: "ESWC (1)"
+    year: 2025
+    pages: "460-480"
+    doi: "https://doi.org/10.1007/978-3-031-94575-5_25"
+
+  - title: "ShortPathQA: A Dataset for Controllable Fusion of Large Language Models with Knowledge Graphs"
+    authors: "Mikhail Salnikov, Andrey Sakhovskiy, Irina Nikishina, Aida Usmanova, Angelie Kraft, Cedric Möller, Debayan Banerjee, Junbo Huang, Longquan Jiang, Rana Abdullah, Xi Yan, Elena Tutubalina, Ricardo Usbeck, Alexander Panchenko"
+    venue: "NLDB (1)"
+    year: 2025
+    pages: "95-110"
+    doi: "https://doi.org/10.1007/978-3-031-97141-9_7"
+
+  - title: "Ontology-Guided, Hybrid Prompt Learning for Generalization in Knowledge Graph Question Answering"
+    authors: "Longquan Jiang, Junbo Huang, Cedric Möller, Ricardo Usbeck"
+    venue: "ICSC"
+    year: 2025
+    pages: "28-35"
+    doi: "https://doi.org/10.1109/ICSC64641.2025.00010"
+
+  - title: "QALD-10 - The 10th Challenge on Question Answering over Linked Data: Shifting from DBpedia to Wikidata as a KG for KGQA"
+    authors: "Ricardo Usbeck, Xi Yan, Aleksandr Perevalov, Longquan Jiang, Julius Schulz, Angelie Kraft, Cedric Möller, Junbo Huang, Jan Reineke, Axel-Cyrille Ngonga Ngomo, Muhammad Saleem, Andreas Both"
+    venue: "Semantic Web 15(6)"
+    year: 2024
+    pages: "2193-2207"
+    doi: "https://doi.org/10.3233/SW-233471"
+
+  - title: "DISCIE - Discriminative Closed Information Extraction"
+    authors: "Cedric Möller, Ricardo Usbeck"
+    venue: "ISWC (2)"
+    year: 2024
+    pages: "23-40"
+    doi: "https://doi.org/10.1007/978-3-031-77850-6_2"
+
+  - title: "Entity Linking with Out-of-Knowledge-Graph Entity Detection and Clustering Using Only Knowledge Graphs"
+    authors: "Cedric Möller, Ricardo Usbeck"
+    venue: "SEMANTICS"
+    year: 2024
+    pages: "88-105"
+    doi: "https://doi.org/10.3233/SSW240009"
+
+  - title: "Incorporating Type Information into Zero-Shot Relation Extraction"
+    authors: "Ricardo Usbeck, Cedric Möller"
+    venue: "TEXT2KG/DQMLKG@ESWC"
+    year: 2024
+    url: "https://ceur-ws.org/Vol-3747/text2kg_paper3.pdf"
+
+  - title: "Event Extraction Alone Is Not Enough"
+    authors: "Junbo Huang, Longquan Jiang, Cedric Möller, Ricardo Usbeck"
+    venue: "Text2Story@ECIR"
+    year: 2024
+    pages: "105-114"
+    url: "https://ceur-ws.org/Vol-3671/paper9.pdf"
+
+  - title: "Biomedical Entity Linking with Triple-aware Pre-Training"
+    authors: "Xi Yan, Cedric Möller, Ricardo Usbeck"
+    venue: "arXiv preprint"
+    year: 2023
+    doi: "https://doi.org/10.48550/arXiv.2308.14429"
+
+  - title: "Survey on English Entity Linking on Wikidata: Datasets and Approaches"
+    authors: "Cedric Möller, Jens Lehmann, Ricardo Usbeck"
+    venue: "Semantic Web 13(6)"
+    year: 2022
+    pages: "925-966"
+    doi: "https://doi.org/10.3233/SW-212865"
+
+  - title: "Knowledge Graph Population with Out-of-KG Entities"
+    authors: "Cedric Möller"
+    venue: "ESWC (Satellite Events)"
+    year: 2022
+    pages: "199-214"
+    doi: "https://doi.org/10.1007/978-3-031-11609-4_35"
