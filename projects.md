@@ -37,12 +37,3 @@ A graph-based dialogue system for task-oriented human–machine interaction.
 - NLU components for intent recognition and entity extraction
 - ML models for dialogue understanding and response selection
 
----
-
-## RESCUE-MATE Crisis Map
-
-An interactive map visualisation showing crisis-related event data, developed as part of the RESCUE MATE project.
-
-[**Open RESCUE-MATE Crisis Map**](https://map.skynet.coypu.org)
-
-> **Note:** This demo is not always running and may be temporarily unavailable.
