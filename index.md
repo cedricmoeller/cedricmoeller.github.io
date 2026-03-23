@@ -3,8 +3,6 @@ layout: home
 title: Home
 ---
 
-# Cedric Möller
-
 I bring a strong foundation in machine learning, with extensive experience in natural language processing and knowledge graph technologies. I have designed, implemented, and deployed ML systems in collaborative, multi-stakeholder projects, turning complex concepts into reliable, data-driven solutions. My experience in teaching and mentoring has strengthened my ability to communicate technical concepts clearly and work effectively across interdisciplinary teams.
 
 ## Experience
