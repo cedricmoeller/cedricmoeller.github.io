@@ -1,9 +1,9 @@
-title:  Cedric Moeller's Personal Website
+title: Cedric Moeller's Personal Website
 email: cedric.moeller@uni-hamburg.de
 baseurl: ""
 url: "https://cedricmoeller.github.io"
-github_username:  cedricmoeller
-author: Cedric Moeller
+github_username: cedricmoeller
+author: Cedric Möller
 
 # Build settings
 theme: minima
@@ -13,4 +13,3 @@ markdown: kramdown
 
 exclude:
   - README.md
-  - about.md

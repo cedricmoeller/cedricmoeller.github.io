@@ -3,40 +3,60 @@ layout: home
 title: Home
 ---
 
-# Cedric Moeller
+# Cedric Möller
 
-## About Me
-I am a dedicated Ph.D. student with a strong passion for knowledge graphs. My research interests encompass knowledge extraction, entity linking, relation extraction, QA, and GNNs. I am currently employed at the University of Hamburg, where I contribute to the teaching of the Data Engineering course and the Knowledge Graph course.
+I bring a strong foundation in machine learning, with extensive experience in natural language processing and knowledge graph technologies. I have designed, implemented, and deployed ML systems in collaborative, multi-stakeholder projects, turning complex concepts into reliable, data-driven solutions. My experience in teaching and mentoring has strengthened my ability to communicate technical concepts clearly and work effectively across interdisciplinary teams.
 
-Before my Ph.D. studies, I gained valuable experience working at Fraunhofer IAIS in Dresden, where I played a key role in the design and implementation of a Dialog System. I hold a diploma in Computer Science from TU Dresden.
+## Experience
 
-With a solid academic background and professional experience, I am eager to tackle new challenges and make significant contributions to the field.
+**Research Associate** — House of Computing and Data Science, Hamburg *(August 2024–Present)*
+- Leading a team in a multi-partner R&D project focused on AI support for emergency response
+- Architecting scalable NLP and information extraction pipelines for operational text data
+- Translating stakeholder requirements into deployable technical solutions in collaboration with external partners
 
-## Work Experience
-- **Teaching Assistant**, Data Engineering course, University of Hamburg
-  - Contributed to course development and delivery
-  - Assisted students with course materials and assignments
-- **Teaching Assistant**, Knowledge Graph course, University of Hamburg
-  - Supported lectures and hands-on lab sessions
-  - Mentored students on projects and assignments
-- **Researcher**, Dialog System Design and Implementation, Fraunhofer IAIS, Dresden
-  - Actively participated in the design and implementation of a Dialog System
-  - Collaborated with a team to ensure project success and timely completion
+**Research Associate** — University of Hamburg *(August 2021–July 2024)*
+- Conducted applied research at the intersection of NLP, semantic web technologies, and knowledge graphs
+- Contributed to project acquisition, technical planning, teaching and supervision of junior researchers
+
+**Research Associate** — Fraunhofer IAIS, Dresden *(Dec 2019–July 2021)*
+- Engineered and integrated a task-oriented dialogue system into an operational software environment
+- Developed information extraction pipelines to structure and normalize information from heterogeneous text sources
+
+**Intern** — Fraunhofer IPA, Stuttgart *(Oct 2017–March 2018)*
+- Contributed to the development of a long-term SLAM system for mobile robotic platforms
 
 ## Education
-- **Ph.D. Student**, University of Hamburg (in progress)
-  - Specialization in Knowledge Graphs
-  - Research focused on knowledge extraction, entity linking, relation extraction, QA, and GNNs
-- **Diploma in Computer Science**, TU Dresden
-  - Acquired a strong foundation in computer science principles and concepts
 
-## Research Interests
-- Knowledge Graphs
-- Knowledge Extraction
-- Entity Linking
-- Relation Extraction
-- Question Answering
-- Graph Neural Networks
+**Ph.D.**, University of Hamburg *(Nov 2021–Feb 2026)*
+Thesis: *Knowledge Graph-Guided Information Extraction*
+
+**Diploma in Computer Science**, Technical University of Dresden *(Oct 2014–Oct 2019)*
+
+## Technical Skills
+
+- **Languages:** Python (7+ years), C++ (2 years), Java (2 years)
+- **ML/DL:** PyTorch, large-scale model training, LLM fine-tuning & prompting, Agentic AI
+- **Frameworks:** Transformers, LangGraph, vLLM, Elasticsearch, FAISS
+- **Systems:** Docker, FastAPI, CI/CD pipelines, GPU cluster management
+- **Data:** RAG pipelines, relational databases, knowledge graphs
+
+## Languages
+
+German (native) · English (fluent) · Japanese (basic)
+
+## Selected Publications
+
+See the full [publications list](/publications/).
+
+{% assign sorted_pubs = site.data.publications.publications | sort: "year" | reverse %}
+{% for pub in sorted_pubs limit:5 %}
+- {% if pub.doi %}[{{ pub.title }}]({{ pub.doi }}){% elsif pub.url %}[{{ pub.title }}]({{ pub.url }}){% else %}{{ pub.title }}{% endif %} — *{{ pub.venue }}*, {{ pub.year }}
+{% endfor %}
+
+## Projects
+
+See the [projects page](/projects/) for demos and tools.
 
 ## Contact
-I'm always happy to connect and discuss new opportunities. Feel free to contact me through [email](mailto:cedric.moeller@uni-hamburg.de) or connect with me on [LinkedIn](https://www.linkedin.com/in/cedric-moeller-784a501a1/), [Twitter](https://twitter.com/CedricMoeller), or [GitHub](https://github.com/cedricmoeller).
+
+[cedric.moeller@icloud.com](mailto:cedric.moeller@icloud.com) · [LinkedIn](https://www.linkedin.com/in/cedric-moeller-784a501a1/) · [GitHub](https://github.com/cedricmoeller)
