@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 ## RESCUE MATE
-*House of Computing and Data Science, Hamburg*
+*House of Computing and Data Science, Hamburg* · [rescue-mate.de](https://rescue-mate.de)
 
 AI tools to support emergency response operations, developed as part of a multi-partner R&D project.
 
@@ -30,7 +30,7 @@ Automated information extraction from physicians' textual reports to support cli
 ---
 
 ## SPEAKER
-*Fraunhofer IAIS, Dresden*
+*Fraunhofer IAIS, Dresden* · [speaker.fraunhofer.de](https://www.speaker.fraunhofer.de)
 
 A graph-based dialogue system for task-oriented human–machine interaction.
 
