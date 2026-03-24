@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* ───────────────────────────────────────────────────────── Cedric Möller — personal site styles Fonts: Playfair Display (headings) + Figtree (body) Loaded via _includes/custom-head.html
+───────────────────────────────────────────────────────── */
+:root { --serif: 'Playfair Display', Georgia, 'Times New Roman', serif; --sans: 'Figtree', -apple-system, system-ui, sans-serif; --navy: #0d1f3c; --blue: #1a56db; --rust: #c85a28; --amber: #b86b26; --amber-light: rgba(184, 107, 38, 0.08); --text: #374151; --muted: #6b7280; --bg: #fffdf9; --bg-page: #faf8f5; --bg-subtle: #f5ede0; --border: #e5ddd4; --max-w: 780px; --card-pad: 3rem 2.5rem 5rem; }
+
+/* ─── Reset ─── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { font-family: var(--sans); font-size: 16.5px; line-height: 1.78; color: var(--text); background: var(--bg-page); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin: 0; }
+
+/* ─── Headings ─── */
+h1, h2, h3, h4, h5, h6 { font-family: var(--serif); color: var(--navy); line-height: 1.2; font-weight: 600; margin-top: 0; }
+
+h1 { font-size: 2.6rem; letter-spacing: -0.025em; margin-bottom: 0.5em; }
+
+h2 { font-size: 1.05rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--navy); margin: 2.6em 0 0.9em; padding: 0.35em 0.85em; border-left: 3px solid var(--amber); background: var(--amber-light); border-radius: 0 3px 3px 0; }
+
+h3 { font-size: 1.05rem; margin: 1.6em 0 0.4em; }
+
+/* ─── Body text ─── */
+p { margin: 0 0 1.1em; }
+
+a { color: var(--blue); text-decoration: none; transition: color 0.15s ease; }
+
+a:hover { color: var(--rust); }
+
+a:visited { color: var(--blue); }
+
+strong { font-weight: 600; color: var(--navy); }
+
+em { font-style: italic; }
+
+hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
+
+blockquote { margin: 1.5em 0; padding: 0.75em 1.25em; border-left: 3px solid var(--amber); background: var(--bg-subtle); border-radius: 0 4px 4px 0; color: var(--muted); font-size: 0.94em; font-style: italic; }
+
+blockquote p:last-child { margin-bottom: 0; }
+
+ul, ol { padding-left: 1.4em; margin: 0 0 1em; }
+
+li { margin-bottom: 0.3em; line-height: 1.65; }
+
+p + ul { margin-top: -0.3em; }
+
+/* ─── Skill category labels (bold text at start of list items) ─── */
+li strong { color: var(--amber); font-weight: 700; }
+
+/* ─── Experience role titles (first bold in a paragraph) ─── */
+.home-content p > strong:first-child, .content-card p > strong:first-child { color: var(--blue); }
+
+/* ─── Navigation ─── */
+.site-header { background: var(--navy); border: none; min-height: 0; padding: 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(13, 31, 60, 0.3); }
+
+.site-header > .wrapper { max-width: var(--max-w); margin: 0 auto; padding: 13px 2rem; display: flex; align-items: center; justify-content: space-between; }
+
+.site-title, .site-title:visited { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; color: rgba(255, 255, 255, 0.85) !important; letter-spacing: -0.01em; text-decoration: none; float: none; transition: color 0.15s ease; }
+
+.site-title:hover { color: #ffffff !important; }
+
+.site-nav { float: none; line-height: 1; background: none; border: none; display: flex; align-items: center; }
+
+.site-nav label[for="nav-trigger"] { display: none; }
+
+.site-nav input.nav-trigger { display: none; }
+
+.site-nav .trigger { display: flex; }
+
+.site-nav .page-link { font-size: 0.74rem; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: rgba(255, 255, 255, 0.55); padding: 6px 11px; border-radius: 4px; margin-left: 0; transition: color 0.15s ease, background 0.15s ease; }
+
+.site-nav .page-link:hover { color: #ffffff; background: rgba(255, 255, 255, 0.1); }
+
+/* ─── Mobile nav ─── */
+@media (max-width: 600px) { .site-header > .wrapper { padding: 11px 1.25rem; position: relative; }
+  .site-nav { position: absolute; top: 8px; right: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 6px; background: var(--navy); text-align: right; }
+  .site-nav label[for="nav-trigger"] { display: block; cursor: pointer; padding: 7px 12px; color: rgba(255, 255, 255, 0.6); font-size: 0.74rem; letter-spacing: 0.07em; text-transform: uppercase; font-weight: 600; user-select: none; }
+  .site-nav .nav-trigger:checked ~ .trigger { display: block; padding: 4px 0 8px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .site-nav .trigger { display: none; flex-direction: column; }
+  .site-nav .page-link { display: block; text-align: left; padding: 6px 14px; border-radius: 0; }
+  .site-nav .menu-icon { display: inline-block; }
+  .site-nav .menu-icon svg path { fill: rgba(255, 255, 255, 0.7); } }
+/* ─── Page content (wraps all page layouts) ─── */
+.page-content { padding: 0; }
+
+/* ─── Shared card ─── */
+.home-content, .content-card { max-width: var(--max-w); margin: 0 auto; padding: var(--card-pad); background: var(--bg); box-shadow: 0 4px 28px rgba(13, 31, 60, 0.08); border-top: 3px solid var(--amber); }
+
+/* ─── Hero (home page only) ─── */
+.hero { background: var(--navy); padding: 5rem 0 4.5rem; position: relative; overflow: hidden; }
+
+.hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 85% 20%, rgba(26, 86, 219, 0.35) 0%, transparent 50%), radial-gradient(circle at 10% 90%, rgba(184, 107, 38, 0.28) 0%, transparent 45%); pointer-events: none; }
+
+.hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--amber), var(--blue) 50%, transparent 100%); }
+
+.hero .wrapper { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; position: relative; z-index: 1; }
+
+.hero-eyebrow { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255, 255, 255, 0.55); margin: 0 0 1rem; }
+
+.hero-name { font-family: var(--serif); font-size: 3.6rem; font-weight: 700; color: #ffffff; letter-spacing: -0.03em; line-height: 1.08; margin: 0 0 1rem; }
+
+.hero-sub { color: rgba(255, 255, 255, 0.65); font-size: 1rem; font-weight: 300; line-height: 1.7; margin: 0; }
+
+/* ─── Inner page heading ─── */
+.page-heading { font-family: var(--serif); font-size: 2rem; letter-spacing: -0.02em; color: var(--navy); margin-bottom: 1.5em; padding-bottom: 0.5em; border-bottom: 1.5px solid var(--border); }
+
+/* ─── Footer ─── */
+.site-footer { background: var(--navy); border-top: none; padding: 2.5rem 0; color: rgba(255, 255, 255, 0.35); font-size: 0.875rem; }
+
+.site-footer .wrapper { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; }
+
+.site-footer a, .site-footer a:visited { color: rgba(255, 255, 255, 0.4); transition: color 0.15s ease; }
+
+.site-footer a:hover { color: rgba(255, 255, 255, 0.85); }
+
+.footer-col-wrapper { color: rgba(255, 255, 255, 0.35); }
+
+.footer-heading { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: rgba(255, 255, 255, 0.6); margin-bottom: 0.5em; }
+
+.contact-list, .social-media-list { list-style: none; padding: 0; margin: 0; }
+
+/* ─── Responsive ─── */
+@media (max-width: 820px) { .home-content, .content-card { box-shadow: none; } }
+@media (max-width: 600px) { --card-pad: 2rem 1.25rem 4rem;
+  .hero { padding: 3.5rem 0 3rem; }
+  .hero-name { font-size: 2.4rem; }
+  .hero .wrapper { padding: 0 1.25rem; }
+  .home-content, .content-card { padding: 2rem 1.25rem 4rem; }
+  h2 { font-size: 1rem; }
+  body { font-size: 16px; } }
