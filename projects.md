@@ -19,10 +19,10 @@ The map is powered by an end-to-end AI pipeline: posts and news streams are cont
 
 ---
 
-## Data Extraction for Clinical Research
-*University of Hamburg*
+## DZHK — Clinical Information Extraction
+*University of Hamburg · in collaboration with UKE*
 
-This project developed automated information extraction methods for physicians' textual reports to support clinical research workflows. Working within a small research team, I designed and implemented extraction pipelines to identify and structure clinically relevant information from unstructured free text, enabling downstream analysis that would otherwise require manual annotation.
+A collaboration with the Universitätsklinikum Hamburg-Eppendorf (UKE) focused on extracting structured information from Arztbriefe — German clinical discharge letters. I designed and implemented NLP pipelines to identify and structure clinically relevant information from unstructured medical free text, enabling downstream research workflows that would otherwise require manual annotation.
 
 ---
 
