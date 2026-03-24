@@ -4,7 +4,7 @@
 publications:
   - title: "Analyzing the Influence of Knowledge Graph Information on Relation Extraction"
     authors: "Cedric Möller, Ricardo Usbeck"
-    venue: "ESWC (1)"
+    venue: "ESWC"
     year: 2025
     pages: "460-480"
     doi: "https://doi.org/10.1007/978-3-031-94575-5_25"
@@ -33,7 +33,7 @@ publications:
 
   - title: "DISCIE - Discriminative Closed Information Extraction"
     authors: "Cedric Möller, Ricardo Usbeck"
-    venue: "ISWC (2)"
+    venue: "ISWC"
     year: 2024
     pages: "23-40"
     doi: "https://doi.org/10.1007/978-3-031-77850-6_2"
@@ -68,7 +68,7 @@ publications:
 
   - title: "Survey on English Entity Linking on Wikidata: Datasets and Approaches"
     authors: "Cedric Möller, Jens Lehmann, Ricardo Usbeck"
-    venue: "Semantic Web 13(6)"
+    venue: "Semantic Web 13"
     year: 2022
     pages: "925-966"
     doi: "https://doi.org/10.3233/SW-212865"
