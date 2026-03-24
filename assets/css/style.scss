@@ -11,15 +11,17 @@
   --serif:  'Playfair Display', Georgia, 'Times New Roman', serif;
   --sans:   'Figtree', -apple-system, system-ui, sans-serif;
 
-  --navy:       #0d1f3c;
-  --blue:       #1a56db;
-  --rust:       #c85a28;
-  --text:       #374151;
-  --muted:      #6b7280;
-  --bg:         #ffffff;
-  --bg-page:    #f0f3f8;
-  --bg-subtle:  #f4f7fb;
-  --border:     #dde2ea;
+  --navy:        #0d1f3c;
+  --blue:        #1a56db;
+  --rust:        #c85a28;
+  --amber:       #b86b26;
+  --amber-light: rgba(184, 107, 38, 0.08);
+  --text:        #374151;
+  --muted:       #6b7280;
+  --bg:          #fffdf9;
+  --bg-page:     #faf8f5;
+  --bg-subtle:   #f5ede0;
+  --border:      #e5ddd4;
 
   --max-w: 780px;
   --card-pad: 3rem 2.5rem 5rem;
@@ -57,8 +59,10 @@ h2 {
   text-transform: uppercase;
   color: var(--navy);
   margin: 2.6em 0 0.9em;
-  padding: 0 0 0 0.85em;
-  border-left: 3px solid var(--blue);
+  padding: 0.35em 0.85em;
+  border-left: 3px solid var(--amber);
+  background: var(--amber-light);
+  border-radius: 0 3px 3px 0;
 }
 h3 { font-size: 1.05rem; margin: 1.6em 0 0.4em; }
 
@@ -77,7 +81,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
 blockquote {
   margin: 1.5em 0;
   padding: 0.75em 1.25em;
-  border-left: 3px solid var(--blue);
+  border-left: 3px solid var(--amber);
   background: var(--bg-subtle);
   border-radius: 0 4px 4px 0;
   color: var(--muted);
@@ -89,6 +93,18 @@ blockquote p:last-child { margin-bottom: 0; }
 ul, ol { padding-left: 1.4em; margin: 0 0 1em; }
 li { margin-bottom: 0.3em; line-height: 1.65; }
 p + ul { margin-top: -0.3em; }
+
+/* ─── Skill category labels (bold text at start of list items) ─── */
+li strong {
+  color: var(--amber);
+  font-weight: 700;
+}
+
+/* ─── Experience role titles (first bold in a paragraph) ─── */
+.home-content p > strong:first-child,
+.content-card p > strong:first-child {
+  color: var(--blue);
+}
 
 /* ─── Navigation ─── */
 .site-header {
@@ -196,6 +212,7 @@ p + ul { margin-top: -0.3em; }
   padding: var(--card-pad);
   background: var(--bg);
   box-shadow: 0 4px 28px rgba(13,31,60,.08);
+  border-top: 3px solid var(--amber);
 }
 
 /* ─── Hero (home page only) ─── */
@@ -208,9 +225,10 @@ p + ul { margin-top: -0.3em; }
 .hero::before {
   content: '';
   position: absolute;
-  top: -20%; right: -5%;
-  width: 55%; padding-top: 55%;
-  background: radial-gradient(circle, rgba(26,86,219,0.35) 0%, transparent 65%);
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(26,86,219,0.35) 0%, transparent 50%),
+    radial-gradient(circle at 10% 90%, rgba(184,107,38,0.28) 0%, transparent 45%);
   pointer-events: none;
 }
 .hero::after {
@@ -218,7 +236,7 @@ p + ul { margin-top: -0.3em; }
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--blue), transparent 60%);
+  background: linear-gradient(90deg, var(--amber), var(--blue) 50%, transparent 100%);
 }
 .hero .wrapper {
   max-width: var(--max-w);
@@ -232,7 +250,7 @@ p + ul { margin-top: -0.3em; }
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.42);
+  color: rgba(255,255,255,0.55);
   margin: 0 0 1rem;
 }
 .hero-name {
@@ -245,7 +263,7 @@ p + ul { margin-top: -0.3em; }
   margin: 0 0 1rem;
 }
 .hero-sub {
-  color: rgba(255,255,255,0.52);
+  color: rgba(255,255,255,0.65);
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.7;
