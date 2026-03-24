@@ -1,5 +1,5 @@
 @charset "UTF-8";
-:root { --serif: 'Playfair Display', Georgia, 'Times New Roman', serif; --sans: 'Roboto', -apple-system, system-ui, sans-serif; --navy: #0d1f3c; --blue: #1a56db; --blue-dim: #e8effd; --rust: #c85a28; --green: #0d7a55; --text: #374151; --muted: #6b7280; --bg: #ffffff; --bg-page: #f0f3f8; --bg-subtle: #f4f7fb; --border: #dde2ea; --max-w: 780px; --card-pad: 3rem 2.5rem 5rem; }
+:root { --serif: 'Roboto Serif', Georgia, 'Times New Roman', serif; --sans: 'Roboto Serif', Georgia, serif; --navy: #0d1f3c; --blue: #1a56db; --blue-dim: #e8effd; --rust: #c85a28; --green: #0d7a55; --text: #374151; --muted: #6b7280; --bg: #ffffff; --bg-page: #f0f3f8; --bg-subtle: #f4f7fb; --border: #dde2ea; --max-w: 780px; --card-pad: 3rem 2.5rem 5rem; }
 
 /* ─── Reset ─── */
 *, *::before, *::after { box-sizing: border-box; }
