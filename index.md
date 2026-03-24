@@ -17,6 +17,9 @@ title: Home
         <a href="https://dblp.org/pid/308/1672.html" class="hero-link">DBLP</a>
       </div>
     </div>
+    <div class="hero-photo">
+      <img src="{{ '/assets/images/me.jpeg' | relative_url }}" alt="Cedric Möller">
+    </div>
   </div>
 </section>
 

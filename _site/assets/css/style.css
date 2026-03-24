@@ -81,7 +81,11 @@ p + ul { margin-top: -0.3em; }
 
 .hero-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; position: relative; z-index: 1; }
 
-.hero-text { max-width: 620px; }
+.hero-inner { display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; }
+
+.hero-text { max-width: 560px; }
+
+.hero-photo img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; object-position: center top; border: 3px solid rgba(255, 255, 255, 0.2); flex-shrink: 0; }
 
 .hero-eyebrow { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255, 255, 255, 0.42); margin: 0 0 0.9rem; }
 
@@ -226,7 +230,8 @@ p + ul { margin-top: -0.3em; }
 @media (max-width: 640px) { .skills-grid { grid-template-columns: 1fr; }
   .edu-grid { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }
-  .hero-name { font-size: 2.4rem; } }
+  .hero-name { font-size: 2.4rem; }
+  .hero-photo { display: none; } }
 @media (max-width: 480px) { .hero-name { font-size: 2.1rem; }
   .hero-inner { padding: 0 1.25rem; }
   .home-content, .content-card { padding: 2rem 1.25rem 4rem; }
