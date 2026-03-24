@@ -87,40 +87,45 @@ title: Home
       </div>
     </div>
 
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-meta">Aug 2021 – Jul 2024</div>
-      <div class="tl-body">
-        <div class="tl-title">Research Associate <span class="tl-org">University of Hamburg</span></div>
-        <ul>
-          <li>Conducted applied research at the intersection of NLP, semantic web technologies, and knowledge graphs</li>
-          <li>Contributed to project acquisition, technical planning, teaching and supervision of junior researchers</li>
-        </ul>
-      </div>
-    </div>
+    <details class="tl-more">
+      <summary>Earlier positions</summary>
 
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-meta">Dec 2019 – Jul 2021</div>
-      <div class="tl-body">
-        <div class="tl-title">Research Associate <span class="tl-org">Fraunhofer IAIS, Dresden</span></div>
-        <ul>
-          <li>Engineered and integrated a task-oriented dialogue system into an operational software environment</li>
-          <li>Developed information extraction pipelines to structure and normalize information from heterogeneous text sources</li>
-        </ul>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-meta">Aug 2021 – Jul 2024</div>
+        <div class="tl-body">
+          <div class="tl-title">Research Associate <span class="tl-org">University of Hamburg</span></div>
+          <ul>
+            <li>Conducted applied research at the intersection of NLP, semantic web technologies, and knowledge graphs</li>
+            <li>Contributed to project acquisition, technical planning, teaching and supervision of junior researchers</li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-meta">Oct 2017 – Mar 2018</div>
-      <div class="tl-body">
-        <div class="tl-title">Intern <span class="tl-org">Fraunhofer IPA, Stuttgart</span></div>
-        <ul>
-          <li>Contributed to the development of a long-term SLAM system for mobile robotic platforms</li>
-        </ul>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-meta">Dec 2019 – Jul 2021</div>
+        <div class="tl-body">
+          <div class="tl-title">Research Associate <span class="tl-org">Fraunhofer IAIS, Dresden</span></div>
+          <ul>
+            <li>Engineered and integrated a task-oriented dialogue system into an operational software environment</li>
+            <li>Developed information extraction pipelines to structure and normalize information from heterogeneous text sources</li>
+          </ul>
+        </div>
       </div>
-    </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-meta">Oct 2017 – Mar 2018</div>
+        <div class="tl-body">
+          <div class="tl-title">Intern <span class="tl-org">Fraunhofer IPA, Stuttgart</span></div>
+          <ul>
+            <li>Contributed to the development of a long-term SLAM system for mobile robotic platforms</li>
+          </ul>
+        </div>
+      </div>
+
+    </details>
 
   </div><!-- /timeline -->
 
