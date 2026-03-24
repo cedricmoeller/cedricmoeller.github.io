@@ -13,7 +13,7 @@ AI tools to support emergency response operations, developed as part of a multi-
 - Automatic speech recognition pipelines to transcribe and structure emergency radio communication
 - NLP components evaluated in operational training environments for emergency services
 
-[**Open RESCUE-MATE Crisis Map**](https://map.skynet.coypu.org)
+<a href="https://map.skynet.coypu.org" class="demo-btn" target="_blank" rel="noopener">Open Crisis Map Demo</a>
 
 > **Note:** This demo is not always running and may be temporarily unavailable.
 

@@ -249,6 +249,25 @@ p + ul { margin-top: -0.3em; }
   margin-bottom: 0;
 }
 
+/* ─── Demo button ─── */
+.demo-btn {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #fff !important;
+  background: var(--blue);
+  border-radius: 6px;
+  padding: 6px 16px;
+  margin: 0.5rem 0;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.demo-btn:hover {
+  background: var(--navy) !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
 /* ─── Section link (e.g. "View all →" next to h2) ─── */
 .section-link {
   font-family: var(--sans);

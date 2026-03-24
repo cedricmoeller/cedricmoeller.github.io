@@ -106,6 +106,11 @@ p + ul { margin-top: -0.3em; }
 
 .lead { font-size: 1.05rem; line-height: 1.82; color: var(--text); margin-bottom: 0; }
 
+/* ─── Demo button ─── */
+.demo-btn { display: inline-block; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.03em; color: #fff !important; background: var(--blue); border-radius: 6px; padding: 6px 16px; margin: 0.5rem 0; transition: background 0.15s ease, transform 0.15s ease; }
+
+.demo-btn:hover { background: var(--navy) !important; color: #fff !important; transform: translateY(-1px); }
+
 /* ─── Section link (e.g. "View all →" next to h2) ─── */
 .section-link { font-family: var(--sans); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em; text-transform: none; color: var(--blue); margin-left: auto; opacity: 0.8; transition: opacity 0.15s ease; }
 
